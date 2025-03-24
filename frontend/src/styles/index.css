@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-base-100 text-neutral font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .btn-neubrutalism {
+    @apply px-6 py-3 border-3 border-black shadow-neubrutalism bg-white hover:shadow-none transition-shadow duration-200 font-medium;
+  }
+  
+  .btn-neubrutalism-primary {
+    @apply px-6 py-3 border-3 border-black shadow-neubrutalism bg-primary text-white hover:shadow-none transition-shadow duration-200 font-medium;
+  }
+  
+  .btn-neubrutalism-secondary {
+    @apply px-6 py-3 border-3 border-black shadow-neubrutalism bg-secondary text-white hover:shadow-none transition-shadow duration-200 font-medium;
+  }
+  
+  .btn-neubrutalism-accent {
+    @apply px-6 py-3 border-3 border-black shadow-neubrutalism bg-accent text-white hover:shadow-none transition-shadow duration-200 font-medium;
+  }
+  
+  .card-neubrutalism {
+    @apply border-3 border-black shadow-neubrutalism bg-white rounded-none;
+  }
+  
+  .input-neubrutalism {
+    @apply border-3 border-black p-3 w-full focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+} 
